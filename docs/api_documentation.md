@@ -23,9 +23,6 @@
     - showLuckyEvent
     - setLuckyEventUseSafeAreaWebView:useSafeArea
     - setLuckyEventModalPresentationStyle:presentationStyle
-    - setLuckyEventHashMark:hashMark
-    - setLuckyEventBaseUrl:baseUrl
-    - setLuckyEventExtraParam:key:value
   - [RewardedVideo](#rewardedvideo)
     - load:unitID
     - isLoaded:unitID
@@ -222,37 +219,6 @@ Lucky Event Web ViewController 의 화면 표시 설정합니다.
 | Parameters        |                                |
 | ----------------- | ------------------------------ |
 | presentationStyle | UIModalPresentationStyle 값 적용 |
-
-<br/>
-
-#### - (void)setLuckyEventHashMark:hashMark
-
-Lucky Event의 hashMark값 적용 (관리자를 통해 적용)
-
-| Parameters |                                |
-| ---------- | ------------------------------ |
-| hashMark   | 기본 URL에 값 적용                |
-
-<br/>
-
-#### - (void)setLuckyEventBaseUrl:baseUrl
-
-Lucky Event의 baseUrl 변경 적용 (관리자를 통해 적용)
-
-| Parameters        |                                |
-| ----------------- | ------------------------------ |
-| baseUrl           | baseUrl 값 변경 적용              |
-
-<br/>
-
-#### - (void)setLuckyEventExtraParam:key:value
-
-Lucky Event의 Param 추가 적용 (관리자를 통해 적용)
-
-| Parameters        |                                |
-| ----------------- | ------------------------------ |
-| key               | Param의 key값 적용               |
-| value             | Param의 value 적용               |
 
 <br/>
 
