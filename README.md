@@ -1,32 +1,31 @@
 # REVUP for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-1.0.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-1.1.0-blue)](../../releases)
 
-- 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +**
+- 지원 환경 : **iOS 15.0 + / iPadOS 15.0 + / Xcode 26.2 +**
 <details>
 <summary>Networks Version</summary>
 <div markdown="1">  
 
-| Ad Network          | iOS Version  |
-|---------------------|--------------|
-| AdMob               | 12.14.0      |
-| Amazon              | 5.3.3        |
-| AppLovin            | 13.5.1       |
-| BidMachine          | 3.5.1        |
-| Bigo                | 5.0.0        |
-| Chartboost          | 9.11.0       |
-| DT Exchange         | 8.4.3        |
-| InMobi              | 11.0.0       |
-| ironSource	      | 9.2.0.0      |
-| Liftoff(Vungle)     | 7.6.3        |
-| Line                | 2.9.20251119 |
-| Meta(Fan)           | 6.20.1       |
-| Mintegral(Mobvista) | 8.0.4        |
-| Moloco              | 4.2.0        |
-| Ogury               | 5.1.1        |
-| Pangle              | 7.8.5.5      |
-| PubMatic            | 4.11.0       |
-| TnkPub              | 1.24         |
-| Unity Ads           | 4.16.5       |
+| Ad Network          | iOS Version |
+|---------------------|-------------|
+| AdMob               | 13.6.0      |
+| AppLovin            | 13.6.3      |
+| BidMachine          | 3.7.1       |
+| Bigo                | 5.3.0       |
+| Chartboost          | 9.12.0      |
+| DT Exchange         | 8.4.8       |
+| InMobi              | 11.3.0      |
+| ironSource	      | 9.4.0.0     |
+| Liftoff(Vungle)     | 7.7.2       |
+| Line                | 3.0.1       |
+| Meta(Fan)           | 6.21.1      |
+| Mintegral(Mobvista) | 8.1.5       |
+| Moloco              | 4.8.1       |
+| Ogury               | 5.2.3       |
+| Pangle              | 8.1.1.1     |
+| PubMatic            | 5.1.1       |
+| TnkPub              | 1.24        |
+| Unity Ads           | 4.19.0      |
 
 </div>
 </details>
@@ -69,11 +68,11 @@ gem install cocoapods
 - CocoaPods의 Xcode Project내에 Podfile에서 기술
 ```ruby
 # source 'https://github.com/CocoaPods/Specs.git' // 제한망 or install error시 추가
-platform :ios, '13.0'
+platform :ios, '15.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP', '1.0.0'
+    pod 'REVUP', '1.1.0'
 end
 ```
 <details>
@@ -82,35 +81,34 @@ end
 
 ```ruby
 # source 'https://github.com/CocoaPods/Specs.git' // 제한망 or install error시 추가
-platform :ios, '13.0'
+platform :ios, '15.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP/LuckyEvent', '1.0.0'
-    pod 'REVUP/AdManager', '1.0.0'
-    pod 'REVUP/AdMob', '1.0.0'
-    pod 'REVUP/ChartBoost', '1.0.0'
-    pod 'REVUP/Pangle', '1.0.0'
-    pod 'REVUP/TnkPub', '1.0.0'
-    pod 'REVUP/Vungle', '1.0.0'
-    pod 'REVUP/MaxMediaAdManager', '1.0.0'
-    pod 'REVUP/MaxMediaAdMob', '1.0.0'
-    pod 'REVUP/MaxMediaAmazon', '1.0.0'
-    pod 'REVUP/MaxMediaBidMachine', '1.0.0'
-    pod 'REVUP/MaxMediaBigo', '1.0.0'
-    pod 'REVUP/MaxMediaChartBoost', '1.0.0'
-    pod 'REVUP/MaxMediaDTExchange', '1.0.0'
-    pod 'REVUP/MaxMediaFan', '1.0.0'
-    pod 'REVUP/MaxMediaInMobi', '1.0.0'
-    pod 'REVUP/MaxMediaIronSource', '1.0.0'
-    pod 'REVUP/MaxMediaLine', '1.0.0'
-    pod 'REVUP/MaxMediaMobVista', '1.0.0'
-    pod 'REVUP/MaxMediaMoloco', '1.0.0'
-    pod 'REVUP/MaxMediaOgury', '1.0.0'
-    pod 'REVUP/MaxMediaPangle', '1.0.0'
-    pod 'REVUP/MaxMediaPubMatic', '1.0.0'
-    pod 'REVUP/MaxMediaUnityAds', '1.0.0'
-    pod 'REVUP/MaxMediaVungle', '1.0.0'
+    pod 'REVUP/LuckyEvent', '1.1.0'
+    pod 'REVUP/AdManager', '1.1.0'
+    pod 'REVUP/AdMob', '1.1.0'
+    pod 'REVUP/ChartBoost', '1.1.0'
+    pod 'REVUP/Pangle', '1.1.0'
+    pod 'REVUP/TnkPub', '1.1.0'
+    pod 'REVUP/Vungle', '1.1.0'
+    pod 'REVUP/MaxMediaAdManager', '1.1.0'
+    pod 'REVUP/MaxMediaAdMob', '1.1.0'
+    pod 'REVUP/MaxMediaBidMachine', '1.1.0'
+    pod 'REVUP/MaxMediaBigo', '1.1.0'
+    pod 'REVUP/MaxMediaChartBoost', '1.1.0'
+    pod 'REVUP/MaxMediaDTExchange', '1.1.0'
+    pod 'REVUP/MaxMediaFan', '1.1.0'
+    pod 'REVUP/MaxMediaInMobi', '1.1.0'
+    pod 'REVUP/MaxMediaIronSource', '1.1.0'
+    pod 'REVUP/MaxMediaLine', '1.1.0'
+    pod 'REVUP/MaxMediaMobVista', '1.1.0'
+    pod 'REVUP/MaxMediaMoloco', '1.1.0'
+    pod 'REVUP/MaxMediaOgury', '1.1.0'
+    pod 'REVUP/MaxMediaPangle', '1.1.0'
+    pod 'REVUP/MaxMediaPubMatic', '1.1.0'
+    pod 'REVUP/MaxMediaUnityAds', '1.1.0'
+    pod 'REVUP/MaxMediaVungle', '1.1.0'
 end
 ```
 
@@ -157,7 +155,7 @@ pod install --repo-update
 <br/>
 
 #### C. [필수] SKAdNetwork 추가
-- Xcode 12.0 이상이면 SKAdNetwork Download File 내용 추가 ([Download](https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.0.0/REVUPSkAdNetworks.plist))
+- SKAdNetwork Download File 내용 추가 ([Download](https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.0.0/REVUPSkAdNetworks.plist))
 - 2026년 3월 9일에 마지막으로 파일 내용 추가
 ```xml
 <dict>
@@ -218,7 +216,7 @@ import REVUP
 ## 2. Initialize (필수)
 ### A. Code에서 Media 없이 Initialize 방법
 ```swift
-let CALLBACK_TAG = "";    // 관리자를 통해 발급, 기본 ""
+let CALLBACK_TAG = ""    // 관리자를 통해 발급, 기본 ""
 if let revupSDK = REVUPInterface.sharedInstance() {
     revupSDK.setMainDelegate(self)
     revupSDK.initialize(CALLBACK_TAG)
@@ -231,9 +229,9 @@ if let revupSDK = REVUPInterface.sharedInstance() {
 
 ### B. Code에서 직접 Media 넣어서 Initialize 방법
 ```swift
-let MEDIA_ID = "";        // 관리자를 통해 발급
-let MEDIA_SECRET = "";    // 관리자를 통해 발급
-let CALLBACK_TAG = "";    // 관리자를 통해 발급, 기본 ""
+let MEDIA_ID = ""        // 관리자를 통해 발급
+let MEDIA_SECRET = ""    // 관리자를 통해 발급
+let CALLBACK_TAG = ""    // 관리자를 통해 발급, 기본 ""
 if let revupSDK = REVUPInterface.sharedInstance() {
     revupSDK.setMainDelegate(self)
     revupSDK.initialize(MEDIA_ID, mediaSecret: MEDIA_SECRET, callBackTag: CALLBACK_TAG)
@@ -257,9 +255,24 @@ func onInitialized(_ isSuccess: Bool) {
 
 ## 3. 사용자 정보 설정 (필수)
 - `RewardedVideo`, `RewardedInterstitial`를 사용하기 위해 ${\color{red}필수}$ 설정
+<details>
+<summary>Max의 `RewardedVideo`, `Interstitial`를 사용 하면서 앱이 4+, 9+ 일 경우 설정 방법</summary>
+<div markdown="1">  
+
 ```swift
-let USER_ID = "";        // set unique user id to identify the user in reward information
-REVUPInterface.sharedInstance().setUserId(USER_ID);
+let USER_ID = ""		// set unique user id to identify the user in reward information
+let CHILD = .none		// .none(미설정), .child(어린이), .adult(성인)
+REVUPInterface.sharedInstance().setUserId(USER_ID, child: .child)
+```
+
+</div>
+</details>
+<br/>
+
+- Max를 미사용 하거나 앱이 13+ 이상으로 설정 되어 있으면 하단만 사용 가능
+```swift
+let USER_ID = ""		// set unique user id to identify the user in reward information
+REVUPInterface.sharedInstance().setUserId(USER_ID)
 ```
 - 64자까지 설정 가능    
 <br/><br/><br/>
@@ -267,8 +280,8 @@ REVUPInterface.sharedInstance().setUserId(USER_ID);
 ## 4. Lucky Event
 ### A. Settings
 ```swift
-let EVENT_APP_ID = "";		// 관리자를 통해 발급
-let EVENT_PUB_ID = "";		// 관리자를 통해 발급
+let EVENT_APP_ID = ""		// 관리자를 통해 발급
+let EVENT_PUB_ID = ""		// 관리자를 통해 발급
 REVUPInterface.sharedInstance().setLuckyEventAppId(EVENT_APP_ID, pubId: EVENT_PUB_ID)
 ```
 <br/>
@@ -276,6 +289,14 @@ REVUPInterface.sharedInstance().setLuckyEventAppId(EVENT_APP_ID, pubId: EVENT_PU
 ### B. Show
 ```swift
 REVUPInterface.sharedInstance().showLuckyEvent()
+```
+- **사용자 정보 설정(setUserId)** 의 진행 완료 후 Show 호출
+<br/>
+
+### C. Show With URL
+```swift
+let EVENT_URL = ""		// 관리자를 통해 발급
+REVUPInterface.sharedInstance().showLuckyEventUrl()
 ```
 - **사용자 정보 설정(setUserId)** 의 진행 완료 후 Show 호출
 <br/><br/><br/>
@@ -293,7 +314,7 @@ func luckyEventWebViewNavigated(_ url:NSURL!) {
 ### A. Show With Load
 ```swift
 if (REVUPInterface.sharedInstance().isInitialized()) {
-    let UNIT_ID = "";      // 관리자를 통해 발급
+    let UNIT_ID = ""		// 관리자를 통해 발급
 	REVUPInterface.sharedInstance().show(withLoad: UNIT_ID, delegate: self)
 } else {
     // Initialize 재시도
@@ -352,7 +373,7 @@ REVUPInterface.sharedInstance().setShowWithLoad2ErrorAlertMsg(msg, isHidden: isH
 **가. Load**
 ```swift
 if (REVUPInterface.sharedInstance().isInitialized()) {
-    let UNIT_ID = "";      // 관리자를 통해 발급
+    let UNIT_ID = ""		// 관리자를 통해 발급
     REVUPInterface.sharedInstance().load(UNIT_ID)
 } else {
     // Initialize 재시도
@@ -373,7 +394,7 @@ if (REVUPInterface.sharedInstance().isInitialized()) {
 
 **나. IsLoaded**
 ```swift
-let UNIT_ID = "";      // Load한 값(관리자를 통해 발급)
+let UNIT_ID = ""		// Load한 값(관리자를 통해 발급)
 if (REVUPInterface.sharedInstance().isLoaded(UNIT_ID)) {
     // show ad here
 } else {
@@ -385,7 +406,7 @@ if (REVUPInterface.sharedInstance().isLoaded(UNIT_ID)) {
 
 **다. Show**
 ```swift
-let UNIT_ID = "";      // Load한 값(관리자를 통해 발급)
+let UNIT_ID = ""		// Load한 값(관리자를 통해 발급)
 if (REVUPInterface.sharedInstance().isLoaded(UNIT_ID)) {
     REVUPInterface.sharedInstance().show()
 } else {
@@ -447,7 +468,7 @@ func onRewardedVideoAdFailed(toShow unitID: String!, error: REVUPError!) {
 ### A. Show With Load
 ```swift
 if (REVUPInterface.sharedInstance().isInitialized()) {
-    let UNIT_ID = "";      // 관리자를 통해 발급
+    let UNIT_ID = ""    // 관리자를 통해 발급
 	REVUPInterface.sharedInstance().show(withLoadInterstitial: UNIT_ID, delegate: self)
 } else {
     // Initialize 재시도
@@ -506,7 +527,7 @@ REVUPInterface.sharedInstance().setShowWithLoad2ErrorAlertMsg(msg, isHidden: isH
 **가. Load**
 ```swift
 if (REVUPInterface.sharedInstance().isInitialized()) {
-    let UNIT_ID = "";      // 관리자를 통해 발급
+    let UNIT_ID = ""		// 관리자를 통해 발급
     REVUPInterface.sharedInstance().loadInterstitial(UNIT_ID)
 } else {
     // Initialize 재시도
@@ -524,7 +545,7 @@ if (REVUPInterface.sharedInstance().isInitialized()) {
 
 **나. IsLoaded**
 ```swift
-let UNIT_ID = "";      // Load한 값(관리자를 통해 발급)
+let UNIT_ID = ""		// Load한 값(관리자를 통해 발급)
 if (REVUPInterface.sharedInstance().isLoadedInterstitialUnitID(UNIT_ID)) {
     // show ad here
 } else {
@@ -536,7 +557,7 @@ if (REVUPInterface.sharedInstance().isLoadedInterstitialUnitID(UNIT_ID)) {
 
 **다. Show**
 ```swift
-let UNIT_ID = "";      // Load한 값(관리자를 통해 발급)
+let UNIT_ID = ""		// Load한 값(관리자를 통해 발급)
 if (REVUPInterface.sharedInstance().isLoadedInterstitialUnitID(UNIT_ID)) {
     REVUPInterface.sharedInstance().showInterstitial()
 } else {
@@ -595,8 +616,8 @@ if (REVUPInterface.sharedInstance().isInitialized()) {
 ### B. Unit 지정 PreLoad
 ```swift
 if (REVUPInterface.sharedInstance().isInitialized()) {
-    let UNIT_ID1 = "";      // 관리자를 통해 발급
-    let UNIT_ID2 = "";      // 관리자를 통해 발급
+    let UNIT_ID1 = ""		// 관리자를 통해 발급
+    let UNIT_ID2 = ""		// 관리자를 통해 발급
     REVUPInterface.sharedInstance().preLoadRewardedInterstitial([UNIT_ID1, UNIT_ID2, ... ])
 } else {
     // Initialize 재시도
@@ -606,10 +627,57 @@ if (REVUPInterface.sharedInstance().isInitialized()) {
 - 입력된 유닛들을 Load 진행
 <br/>
 
-### C. Show
+### C. Load
 ```swift
-let UNIT_ID = "";      // 관리자를 통해 발급
-REVUPInterface.sharedInstance().showRewardedInterstitial(UNIT_ID)
+if (REVUPInterface.sharedInstance().isInitialized()) {
+    let UNIT_ID = ""		// 관리자를 통해 발급
+    REVUPInterface.sharedInstance().loadRewardedInterstitial(UNIT_ID)
+} else {
+    // Initialize 재시도
+}
+```
+- Initialize 진행 완료 후 Load 호출
+- 해당 유닛에 속한 ad 네크워크들의 광고를 Load
+- `onRewardedInterstitialAdLoaded` callback이 호출되면 Load가 완료
+- RewardedInterstitial `Load`와 `Show`는 pair로 호출
+- Load를 한 후 Show를 하고, 광고를 Show한 후에는 다시 Load를 하여 다음 번 Show를 준비
+- Load 동작 수행 중에 Load를 여러 번 호출할 수 없음
+<br/>
+
+### D. IsLoad
+```swift
+let UNIT_ID = ""		// 관리자를 통해 발급
+if (REVUPInterface.sharedInstance().isLoadedRewardedInterstitial(UNIT_ID)) {
+    // show ad here
+} else {
+    // do something else
+}
+```
+- 광고가 Load 되었는지 상태를 확인
+<br/>
+
+### E. Show
+```swift
+let UNIT_ID = ""		// 관리자를 통해 발급
+if (REVUPInterface.sharedInstance().isLoadedRewardedInterstitial(UNIT_ID)) {
+    REVUPInterface.sharedInstance().showRewardedInterstitial(UNIT_ID)
+} else {
+    // do something else
+}
+```
+- Show 하기 전에 사용자가 취소를 할 수 있는 선택을 노출해야 함
+- 마지막으로 Load된 광고를 사용자에게 보여줌
+- Show 호출 후에는 다시 Load를 호출 할 수 있음
+- Show method는 중복하여 호출 할 수 없음
+- Show가 실행되면 (return값이 True일 경우) `onRewardedInterstitialAdOpened`와 `onRewardedInterstitialAdFailedToShow` 중 하나가 항상 호출되고, `onRewardedInterstitialAdOpened`가 호출되었다면 이후 `onRewardedInterstitialAdClosed`가 항상 호출
+- RewardedInterstitial Video Ad의 `Load`와 `Show`는 pair로 호출
+    - Load를 한 후 Show를 하고, 광고를 Show한 후에는 다시 Load를 하여 다음번 Show를 준비
+<br/>
+
+### F. Show With Popup
+```swift
+let UNIT_ID = ""		// 관리자를 통해 발급
+REVUPInterface.sharedInstance().showRewardedInterstitialWithPop(UNIT_ID)
 ```
 - 해당 유닛이 Load되어 있으면 안내 팝업을 보여 준 뒤 해당 광고를 사용자에게 보여줌
 - ShowRewardedInterstitial method는 중복하여 호출 할 수 없음
@@ -617,15 +685,15 @@ REVUPInterface.sharedInstance().showRewardedInterstitial(UNIT_ID)
 - `onRewardedInterstitialAdClosed`와 `onRewardedInterstitialAdFailedToShow`가 호출 되면 내부에서 해당 유닛을 자동 Load 시킴
 <br/>
 
-### D. Unit Status Info
+### G. Unit Status Info
 ```swift
-let UNIT_ID = "";      // 관리자를 통해 발급
-REVUPInterface.sharedInstance().getRewardedInterstitialUnitStatus(UNIT_ID);
+let UNIT_ID = ""		// 관리자를 통해 발급
+REVUPInterface.sharedInstance().getRewardedInterstitialUnitStatus(UNIT_ID)
 ```
 - `onRewardedInterstitialResponsedUnitStatus`에서 해당 유닛의 수익화 여부, 활성화 여부를 알 수 있음
 <br/>
 
-### E. Callback Reward
+### H. Callback Reward
 ```swift
 func onRewardedInterstitialRewarded(_ unitID: String!, item: REVUPRewardItem!) {
     // unitID - 해당 RewardedInterstitial의 UNIT_ID (Show 시 입력한 값)
@@ -642,11 +710,17 @@ func onRewardedInterstitialRewarded(_ unitID: String!, item: REVUPRewardItem!) {
   - 이때는 Server를 통해 전달받은 정보를 기준으로 처리하고, `OnRewarded`를 통해 전달받은 정보는 검증용으로 사용하거나 무시하도록 함
 <br/>
 
-### F. Callback Others
+### I. Callback Others
 ```swift
 func onRewardedInterstitialResponsedUnitStatus(_ status: REVUPUnitStatus!) {
     // status.active - 활성화 여부
     // status.live - 수익화 여부
+}
+func onRewardedInterstitialAdLoaded(_ unitID: String!) {
+    // RewardedInterstitial Load Success
+}
+func onRewardedInterstitialAdFailed(toLoad unitID: String!, error: REVUPError!) {
+    // RewardedInterstitial Load Fail
 }
 func onRewardedInterstitialAdSkip(_ unitID: String!) {
     // RewardedInterstitial Skip for 안내 팝업

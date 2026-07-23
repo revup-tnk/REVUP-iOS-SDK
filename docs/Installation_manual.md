@@ -1,11 +1,11 @@
 # REVUP for iOS Integration
 
 ## SDK Download
-- [최신 SDK 다운로드](https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.0.0/REVUPIosSdk-1.0.0.zip)
+- [최신 SDK 다운로드](https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.0/REVUPIosSdk-1.1.0.zip)
   - Releases에 이전 버전 다운로드 가능 ([이동](../../releases))
 
 ## Requirements
-iOS 13.0 + / iPadOS 13.0 + / Xcode 16.0 +
+iOS 15.0 + / iPadOS 15.0 + / Xcode 26.2 +
 
 ## Installation
 ### Manual
@@ -16,7 +16,7 @@ Framework를 Project내에 옮깁니다. REVUP.xcframework는 필수이며, 반�
 
 | REVUP Framework               | Essential | Third-party Frameworks                                       |
 | ------------------------------------------- | --------- | ------------------------------------------------------------ |
-| REVUP.xcframework                           | YES       |                                                              |
+| REVUP.xcframework                           | NO       |                                                              |
 | REVUPLuckyEvent.xcframework                 | NO        |                                                              |
 | REVUPMediaAdMob.xcframework                 | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
 | REVUPMediaAdManager.xcframework             | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
@@ -27,16 +27,15 @@ Framework를 Project내에 옮깁니다. REVUP.xcframework는 필수이며, 반�
 | REVUPMediaMax.xcframework                   | NO        | AppLovinSDK.xcframework  |
 | REVUPMediaMaxAdapterAdManager.xcframework   | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework<br/>AppLovinMediationGoogleAdManagerAdapter.xcframework  |
 | REVUPMediaMaxAdapterAdMob.xcframework       | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework<br/>AppLovinMediationGoogleAdapter.xcframework  |
-| REVUPMediaMaxAdapterAmazon.xcframework      | NO        | DTBiOSSDK.xcframework, AppLovinMediationAmazonAdMarketplaceAdapter.xcframework  |
-| REVUPMediaMaxAdapterBidMachine.xcframework  | NO        | BidMachine.xcframework, StackModules.xcframework<br/>StackProductPresentation.xcframework, StackRendering.xcframework<br/>OMSDK_Appodeal.xcframework, AppLovinMediationBidMachineAdapter.xcframework  |
+| REVUPMediaMaxAdapterBidMachine.xcframework  | NO        | BidMachine.xcframework, OMSDK_Appodeal.xcframework<br/>AppLovinMediationBidMachineAdapter.xcframework  |
 | REVUPMediaMaxAdapterBigo.xcframework        | NO        | BigoADS.xcframework, AppLovinMediationBigoAdsAdapter.xcframework  |
 | REVUPMediaMaxAdapterChartBoost.xcframework  | NO        | ChartboostSDK.xcframework, AppLovinMediationChartboostAdapter.xcframework  |
-| REVUPMediaMaxAdapterDTExchange.xcframework  | NO        | IASDKCore.xcframework  |
-| REVUPMediaMaxAdapterFan.xcframework         | NO        | FBAudienceNetwork.xcframework  |
-| REVUPMediaMaxAdapterInMobi.xcframework      | NO        | InMobiSDK.xcframework  |
+| REVUPMediaMaxAdapterDTExchange.xcframework  | NO        | IASDKCore.xcframework, AppLovinMediationFyberAdapter.xcframework  |
+| REVUPMediaMaxAdapterFan.xcframework         | NO        | FBAudienceNetwork.xcframework, AppLovinMediationFacebookAdapter.xcframework  |
+| REVUPMediaMaxAdapterInMobi.xcframework      | NO        | InMobiSDK.xcframework, AppLovinMediationInMobiAdapter.xcframework  |
 | REVUPMediaMaxAdapterIronSource.xcframework  | NO        | IronSource.xcframework, AppLovinMediationIronSourceAdapter.xcframework  |
 | REVUPMediaMaxAdapterLine.xcframework        | NO        | FiveAd.xcframework, AppLovinMediationLineAdapter.xcframework  |
-| REVUPMediaMaxAdapterMobVista.xcframework    | NO        | MTGSDK.xcframework, MTGSDKBanner.xcframework<br/>MTGSDKBidding.xcframework,MTGSDKInterstitialVideo.xcframework<br/>MTGSDKNewInterstitial.xcframework, MTGSDKReward.xcframework<br/>MTGSDKSplash.xcframework  |
+| REVUPMediaMaxAdapterMobVista.xcframework    | NO        | MTGSDK.xcframework, MTGSDKBanner.xcframework<br/>MTGSDKBidding.xcframework,MTGSDKInterstitialVideo.xcframework<br/>MTGSDKNewInterstitial.xcframework, MTGSDKReward.xcframework<br/>MTGSDKSplash.xcframework, AppLovinMediationMintegralAdapter.xcframework  |
 | REVUPMediaMaxAdapterMoloco.xcframework      | NO        | MolocoSDK.xcframework, AppLovinMediationMolocoAdapter.xcframework  |
 | REVUPMediaMaxAdapterOgury.xcframework       | NO        | OguryAds.xcframework, OguryCore.xcframework<br/>OgurySdk.xcframework, OMSDK_Ogury.xcframework<br/>AppLovinMediationOguryPresageAdapter.xcframework  |
 | REVUPMediaMaxAdapterPangle.xcframework      | NO        | PAGAdSDK.xcframework, PAGAdSDK.bundle<br/>AppLovinMediationByteDanceAdapter.xcframework  |
@@ -54,9 +53,7 @@ Framework를 Project내에 옮깁니다. REVUP.xcframework는 필수이며, 반�
 ```object-c
 #import <REVUP/REVUP.h>
 ```
-2. REVUP.xcframework 추가
-   - Xcode Project > General Tab 접근 > Frameworks, Libraries, and Embedded Content 에 REVUP.xcframework 를 추가 후 Embed & Sign 으로 변경
-3. Build Settings 수정<br/>
+2. Build Settings 수정<br/>
 ![image](https://github.com/user-attachments/assets/78c0472d-e384-406a-b038-a177c4ab3458)
    - TARGETS > Build Settings > Other Linker Flags 에 `-ObjC` 추가
 3. (**Optional**) RewardedVideo, Interstitial을 사용하기 위한 Framework들을 추가
@@ -66,5 +63,5 @@ Framework를 Project내에 옮깁니다. REVUP.xcframework는 필수이며, 반�
        - *REVUPMediaVungle.xcframework*
        - *VungleSDK.xcframework*
 4. (**Optional**) Max 사용시 Embed & Sign 설정
-   - Xcode Project > General Tab 접근 > Frameworks, Libraries, and Embedded Content 에 AppLovinSDK.xcframework, DTBiOSSDK.xcframework, InMobiSDK.xcframework, MolocoSDK.xcframework, OguryAds.xcframework, OguryCore.xcframework, OgurySdk.xcframework, OMSDK_Appodeal.xcframework, OMSDK_Ogury.xcframework, OMSDK_Pubmatic.xcframework, TnkPubSdk.xcframework 를 추가 후 Embed & Sign 으로 변경
+   - Xcode Project > General Tab 접근 > Frameworks, Libraries, and Embedded Content 에 AppLovinSDK.xcframework, InMobiSDK.xcframework, MolocoSDK.xcframework, OguryAds.xcframework, OguryCore.xcframework, OgurySdk.xcframework, OMSDK_Appodeal.xcframework, OMSDK_Ogury.xcframework, OMSDK_Pubmatic.xcframework, OpenWrapSDK.xcframework, TnkPubSdk.xcframework 를 추가 후 Embed & Sign 으로 변경
    - Xcode Project > General Tab 접근 > Frameworks, Libraries, and Embedded Content 에 libbz2.tbd, libc++.tbd, libc++abi.tbd, libiconv.tbd, libresolv.9.tbd, libsqlite3.tbd, libxml2.tbd, libz.tbd 추가

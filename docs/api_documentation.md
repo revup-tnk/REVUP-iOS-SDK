@@ -9,6 +9,7 @@
     - isInitialized
     - setMainDelegate:delegate
     - setUserId:userID
+    - setUserId:userId:child
     - setRewardedCheckParam:param
     - getUnitStatus:unitID
     - setUseCloudFrontProxy:useCloudFrontProxy
@@ -21,6 +22,8 @@
   - [Lucky Event](#lucky-event)
     - setLuckyEventAppId:appId:pubId
     - showLuckyEvent
+    - showLuckyEventUrl:url
+    - setLuckyEventInit
     - setLuckyEventUseSafeAreaWebView:useSafeArea
     - setLuckyEventModalPresentationStyle:presentationStyle
   - [RewardedVideo](#rewardedvideo)
@@ -36,8 +39,11 @@
   - [RewardedInterstitial](#rewardedinterstitial)
     - preLoadAllRewardedInterstitial  
     - preLoadRewardedInterstitial:unitIDs
-    - getRewardedInterstitialUnitStatus:unitID
+    - loadRewardedInterstitial:unitID
+    - isLoadedRewardedInterstitial:unitID
+    - showRewardedInterstitialWithPop:unitID
     - showRewardedInterstitial:unitID
+    - getRewardedInterstitialUnitStatus:unitID
 - [Delegate](#delegate)
   - [Core](#core-1)
     - onInitializedCallback:isSuccess
@@ -57,6 +63,8 @@
     - onInterstitialAdFailedToShow:unitID:error
   - [RewardedInterstitial](#rewardedinterstitial-1)
     - onRewardedInterstitialAdSkip:unitID
+    - onRewardedInterstitialAdLoaded:unitID
+    - onRewardedInterstitialAdFailedToLoad:unitID:error
     - onRewardedInterstitialAdOpened:unitID
     - onRewardedInterstitialAdClosed:unitID
     - onRewardedInterstitialRewarded:unitID:Item
@@ -119,6 +127,26 @@ Application 사용자의 Unique Id를 설정. 이 정보는 reward 지급 등에
 | Parameters |                     |
 | ---------- | ------------------- |
 | userId     | 고유한 유저의 ID 값 |
+
+| Return     |                                     |
+| ---------- | ----------------------------------- |
+| isSuccesss | UserID의 형식이 잘못 되었을 경우 NO |
+
+<br>
+
+##### - (BOOL)setUserId:userID:child
+
+Application 사용자의 Unique Id를 설정. 이 정보는 reward 지급 등에 있어 사용자를 구분하는데 사용합니다.<br>
+※ 만일 서비스에서 한 사람당 N개의 계정 사용이 가능한 경우, 계정 변경 시 `setUserId` 호출로 애디스콥에 변경 정보를 전달해주어야 합니다.
+그렇지 않을 경우 변경된 계정 정보로 보상 지급이 되지 않으니 유의해주세요.<br>
+Max를 사용하는데 App이 4세이상, 9세이상일 경우 child값 전달 필요
+
+⚠️ UserID의 최대 길이는 64자 입니다.
+
+| Parameters |                     |
+| ---------- | ------------------- |
+| userId     | 고유한 유저의 ID 값 |
+| child      | none(미설정), child(어린이), .dult(성인) |
 
 | Return     |                                     |
 | ---------- | ----------------------------------- |
@@ -198,7 +226,19 @@ Lucky Event의 appId 와 pubId 값을 설정합니다.
 
 ##### - (void)showLuckyEvent
 
-Event 의 Web 페이지가 보입니다.
+appId, pubId값에 대응된 Event 의 Web 페이지가 보입니다.
+
+<br/>
+
+##### - (void)showLuckyEventUrl:url
+
+URL의 설정값에 대응된 Event 의 Web 페이지가 보입니다.
+
+<br/>
+
+##### - (void)setLuckyEventInit
+
+광고 시청 중 초기화가 필요 시 호출 해야 다음 Event 진행이 가능합니다.
 
 <br/>
 
@@ -334,7 +374,69 @@ unitIds 에 해당하는 광고들를 pre-load 합니다.
 
 | Parameters  |                               |
 | ----------- | ----------------------------- |
-| unitIDs     | 로드 할 Interstitial의 UnitIDs |
+| unitIDs     | 로드 할 RewardedInterstitial UnitIDs |
+
+<br>
+
+##### - (void)loadRewardedInterstitial:unitID
+
+unitId 에 해당하는 광고들를 load 합니다.
+
+⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
+
+| Parameters  |                               |
+| ----------- | ----------------------------- |
+| unitIDs     | 로드 할 RewardedInterstitial UnitID |
+
+<br>
+
+##### - (BOOL)isLoadedRewardedInterstitial:unitID
+
+unitId 에 해당하는 광고가 load 되어 있는지 여부 확인 합니다.
+
+⚠️ `show` method 를 call 하기 전, `isLoadedRewardedInterstitial:unitID` 를 통해 show 가능 여부를 확인합니다.
+
+| Parameters |                                           |
+| :--------- | ----------------------------------------- |
+| unitId     | load 여부를 체크할 RewardedInterstitial UnitID |
+| **Return** |                                           |
+| BOOL       | show할 광고가 존재할 경우 YES             |
+
+<br>
+
+##### - (BOOL)showRewardedInterstitialWithPop:unitID
+
+unitId 에 해당하는 광고가 보여줍니다.
+
+REVUPDelegate의 onRewardedInterstitialAdSkip(), onRewardedInterstitialAdOpened(), onRewardedInterstitialAdClosed(), onRewardedInterstitialRewarded(), onRewardedInterstitialAdFailedToShow() callbacks을 통해 RewardedInterstitial Video 의 show 상태 정보를 얻습니다.
+
+⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
+
+⚠️ RewardedInterstitial 의 정확한 보상정보 처리를 위해 `setUserId:userID` 를 미리 설정해야 합니다.
+
+| Parameters  |                               |
+| ----------- | ----------------------------- |
+| unitIDs     | 로드 할 RewardedInterstitial UnitID |
+| **Return** |                                           |
+| BOOL       | show할 광고가 존재할 경우 YES             |
+
+<br>
+
+##### - (BOOL)showRewardedInterstitial:unitID
+
+unitId 에 해당하는 광고가 보여줍니다.
+
+REVUPDelegate의 onRewardedInterstitialAdLoaded(), onRewardedInterstitialAdFailedToLoad(), onRewardedInterstitialAdOpened(), onRewardedInterstitialAdClosed(), onRewardedInterstitialRewarded(), onRewardedInterstitialAdFailedToShow() callbacks을 통해 RewardedInterstitial Video 의 show 상태 정보를 얻습니다.
+
+⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
+
+⚠️ RewardedInterstitial 의 정확한 보상정보 처리를 위해 `setUserId:userID` 를 미리 설정해야 합니다.
+
+| Parameters |                                      |
+| :--------- | ------------------------------------ |
+| unitId     | 로드 할 RewardedInterstitial UnitID    |
+| **Return** |                                      |
+| BOOL       | show할 광고가 존재할 경우 YES             |
 
 <br>
 
@@ -349,23 +451,6 @@ unitIds 에 해당하는 광고들를 pre-load 합니다.
 | unitId     | 얻고자 하는 RewardedInterstitial의 UnitID |
 
 <br>
-
-##### - (BOOL)showRewardedInterstitial:unitID
-
-unitId 에 해당하는 광고가 보여줍니다.
-
-REVUPDelegate의 onRewardedInterstitialAdSkip(), onRewardedInterstitialAdOpened(), onRewardedInterstitialAdClosed(), onRewardedInterstitialRewarded(), onRewardedInterstitialAdFailedToShow() callbacks을 통해 Rewarded Video 의 show 상태 정보를 얻습니다.
-
-⚠️ `initialize:mediaId:mediaSecret:callBackTag` 가 먼저 호출되어야 합니다.
-
-⚠️ RewardedInterstitial 의 정확한 보상정보 처리를 위해 `setUserId:userID` 를 미리 설정해야 합니다.
-
-| Return |                                      |
-| :----- | ------------------------------------ |
-| BOOL   | 로드된 광고가 가용할 수 없을 경우 NO |
-
-<br>
-
 
 <br>
 
