@@ -1,7 +1,7 @@
 # REVUP for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-1.1.0-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-1.1.1-blue)](../../releases)
 
-- 지원 환경 : **iOS 15.0 + / iPadOS 15.0 + / Xcode 26.2 +**
+- 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 26.2 +**
 <details>
 <summary>Networks Version</summary>
 <div markdown="1">  
@@ -13,7 +13,7 @@
 | BidMachine          | 3.7.1       |
 | Bigo                | 5.3.0       |
 | Chartboost          | 9.12.0      |
-| DT Exchange         | 8.4.8       |
+| DT Exchange         | 8.4.7       |
 | InMobi              | 11.3.0      |
 | ironSource	      | 9.4.0.0     |
 | Liftoff(Vungle)     | 7.7.2       |
@@ -68,11 +68,11 @@ gem install cocoapods
 - CocoaPods의 Xcode Project내에 Podfile에서 기술
 ```ruby
 # source 'https://github.com/CocoaPods/Specs.git' // 제한망 or install error시 추가
-platform :ios, '15.0'
+platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP', '1.1.0'
+    pod 'REVUP', '1.1.1'
 end
 ```
 <details>
@@ -85,30 +85,30 @@ platform :ios, '15.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP/LuckyEvent', '1.1.0'
-    pod 'REVUP/AdManager', '1.1.0'
-    pod 'REVUP/AdMob', '1.1.0'
-    pod 'REVUP/ChartBoost', '1.1.0'
-    pod 'REVUP/Pangle', '1.1.0'
-    pod 'REVUP/TnkPub', '1.1.0'
-    pod 'REVUP/Vungle', '1.1.0'
-    pod 'REVUP/MaxMediaAdManager', '1.1.0'
-    pod 'REVUP/MaxMediaAdMob', '1.1.0'
-    pod 'REVUP/MaxMediaBidMachine', '1.1.0'
-    pod 'REVUP/MaxMediaBigo', '1.1.0'
-    pod 'REVUP/MaxMediaChartBoost', '1.1.0'
-    pod 'REVUP/MaxMediaDTExchange', '1.1.0'
-    pod 'REVUP/MaxMediaFan', '1.1.0'
-    pod 'REVUP/MaxMediaInMobi', '1.1.0'
-    pod 'REVUP/MaxMediaIronSource', '1.1.0'
-    pod 'REVUP/MaxMediaLine', '1.1.0'
-    pod 'REVUP/MaxMediaMobVista', '1.1.0'
-    pod 'REVUP/MaxMediaMoloco', '1.1.0'
-    pod 'REVUP/MaxMediaOgury', '1.1.0'
-    pod 'REVUP/MaxMediaPangle', '1.1.0'
-    pod 'REVUP/MaxMediaPubMatic', '1.1.0'
-    pod 'REVUP/MaxMediaUnityAds', '1.1.0'
-    pod 'REVUP/MaxMediaVungle', '1.1.0'
+    pod 'REVUP/LuckyEvent', '1.1.1'
+    pod 'REVUP/AdManager', '1.1.1'
+    pod 'REVUP/AdMob', '1.1.1'
+    pod 'REVUP/ChartBoost', '1.1.1'
+    pod 'REVUP/Pangle', '1.1.1'
+    pod 'REVUP/TnkPub', '1.1.1'
+    pod 'REVUP/Vungle', '1.1.1'
+    pod 'REVUP/MaxMediaAdManager', '1.1.1'
+    pod 'REVUP/MaxMediaAdMob', '1.1.1'
+    pod 'REVUP/MaxMediaBidMachine', '1.1.1'
+    pod 'REVUP/MaxMediaBigo', '1.1.1'
+    pod 'REVUP/MaxMediaChartBoost', '1.1.1'
+    pod 'REVUP/MaxMediaDTExchange', '1.1.1'
+    pod 'REVUP/MaxMediaFan', '1.1.1'
+    pod 'REVUP/MaxMediaInMobi', '1.1.1'
+    pod 'REVUP/MaxMediaIronSource', '1.1.1'
+    pod 'REVUP/MaxMediaLine', '1.1.1'
+    pod 'REVUP/MaxMediaMobVista', '1.1.1'
+    pod 'REVUP/MaxMediaMoloco', '1.1.1'
+    pod 'REVUP/MaxMediaOgury', '1.1.1'
+    pod 'REVUP/MaxMediaPangle', '1.1.1'
+    pod 'REVUP/MaxMediaPubMatic', '1.1.1'
+    pod 'REVUP/MaxMediaUnityAds', '1.1.1'
+    pod 'REVUP/MaxMediaVungle', '1.1.1'
 end
 ```
 
