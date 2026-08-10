@@ -1,8 +1,8 @@
 # REVUP for iOS Integration
 
 ## SDK Download
-- [최신 SDK 다운로드](https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.3/REVUPIosSdk-1.1.3.zip)
-  - Releases에 이전 버전 다운로드 가능 ([이동](../../../releases))
+- [최신 SDK 다운로드](https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.4/REVUPIosSdk-1.1.4.zip)
+  - Releases에 이전 버전 다운로드 가능 ([이동](../../releases))
 
 ## Requirements
 iOS 13.0 + / iPadOS 13.0 + / Xcode 26.2 +

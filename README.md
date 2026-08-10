@@ -1,5 +1,5 @@
 # REVUP for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-1.1.3-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-1.1.4-blue)](../../releases)
 
 - 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 26.2 +**
 <details>
@@ -72,7 +72,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP', '1.1.3'
+    pod 'REVUP', '1.1.4'
 end
 ```
 <details>
@@ -85,30 +85,30 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP/LuckyEvent', '1.1.3'
-    pod 'REVUP/AdManager', '1.1.3'
-    pod 'REVUP/AdMob', '1.1.3'
-    pod 'REVUP/ChartBoost', '1.1.3'
-    pod 'REVUP/Pangle', '1.1.3'
-    pod 'REVUP/TnkPub', '1.1.3'
-    pod 'REVUP/Vungle', '1.1.3'
-    pod 'REVUP/MaxMediaAdManager', '1.1.3'
-    pod 'REVUP/MaxMediaAdMob', '1.1.3'
-    pod 'REVUP/MaxMediaBidMachine', '1.1.3'
-    pod 'REVUP/MaxMediaBigo', '1.1.3'
-    pod 'REVUP/MaxMediaChartBoost', '1.1.3'
-    pod 'REVUP/MaxMediaDTExchange', '1.1.3'
-    pod 'REVUP/MaxMediaFan', '1.1.3'
-    pod 'REVUP/MaxMediaInMobi', '1.1.3'
-    pod 'REVUP/MaxMediaIronSource', '1.1.3'
-    pod 'REVUP/MaxMediaLine', '1.1.3'
-    pod 'REVUP/MaxMediaMobVista', '1.1.3'
-    pod 'REVUP/MaxMediaMoloco', '1.1.3'
-    pod 'REVUP/MaxMediaOgury', '1.1.3'
-    pod 'REVUP/MaxMediaPangle', '1.1.3'
-    pod 'REVUP/MaxMediaPubMatic', '1.1.3'
-    pod 'REVUP/MaxMediaUnityAds', '1.1.3'
-    pod 'REVUP/MaxMediaVungle', '1.1.3'
+    pod 'REVUP/LuckyEvent', '1.1.4'
+    pod 'REVUP/AdManager', '1.1.4'
+    pod 'REVUP/AdMob', '1.1.4'
+    pod 'REVUP/ChartBoost', '1.1.4'
+    pod 'REVUP/Pangle', '1.1.4'
+    pod 'REVUP/TnkPub', '1.1.4'
+    pod 'REVUP/Vungle', '1.1.4'
+    pod 'REVUP/MaxMediaAdManager', '1.1.4'
+    pod 'REVUP/MaxMediaAdMob', '1.1.4'
+    pod 'REVUP/MaxMediaBidMachine', '1.1.4'
+    pod 'REVUP/MaxMediaBigo', '1.1.4'
+    pod 'REVUP/MaxMediaChartBoost', '1.1.4'
+    pod 'REVUP/MaxMediaDTExchange', '1.1.4'
+    pod 'REVUP/MaxMediaFan', '1.1.4'
+    pod 'REVUP/MaxMediaInMobi', '1.1.4'
+    pod 'REVUP/MaxMediaIronSource', '1.1.4'
+    pod 'REVUP/MaxMediaLine', '1.1.4'
+    pod 'REVUP/MaxMediaMobVista', '1.1.4'
+    pod 'REVUP/MaxMediaMoloco', '1.1.4'
+    pod 'REVUP/MaxMediaOgury', '1.1.4'
+    pod 'REVUP/MaxMediaPangle', '1.1.4'
+    pod 'REVUP/MaxMediaPubMatic', '1.1.4'
+    pod 'REVUP/MaxMediaUnityAds', '1.1.4'
+    pod 'REVUP/MaxMediaVungle', '1.1.4'
 end
 ```
 

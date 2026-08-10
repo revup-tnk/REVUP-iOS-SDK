@@ -22,35 +22,35 @@ https://github.com/revup-tnk/REVUP-SPM.git
 <div markdown="1">  
 
 #### REVUP Netowrks Versions
-| SDK                              | 1.1.3 | 1.1.1 | 1.1.0 | 1.0.0 |
-|----------------------------------|-------|-------|-------|-------|
-| REVUP                            | 1.1.3 | 1.1.1 | 1.1.0 | 1.0.0 |
-| REVUPCore                        | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPLuckyEvent                  | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaAdManager              | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaAdMob                  | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaChartBoost             | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaPangle                 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaTnkPub                 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaVungle                 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMax                    | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterAdManager    | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterAdMob        | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterBidMachine   | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterBigo         | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterChartBoost   | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterDTExchange   | 1.1.1 | 1.1.1 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterFan          | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterInMobi       | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterIronSource   | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterLine         | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterMobVista     | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterMoloco       | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterOgury        | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterPangle       | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterPubMatic     | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterUnityAds     | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
-| REVUPMediaMaxAdapterVungle       | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| SDK                              | 1.1.4 | 1.1.3 | 1.1.1 | 1.1.0 | 1.0.0 |
+|----------------------------------|-------|-------|-------|-------|-------|
+| REVUP                            | 1.1.4 | 1.1.3 | 1.1.1 | 1.1.0 | 1.0.0 |
+| REVUPCore                        | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPLuckyEvent                  | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaAdManager              | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaAdMob                  | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaChartBoost             | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaPangle                 | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaTnkPub                 | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaVungle                 | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMax                    | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterAdManager    | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterAdMob        | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterBidMachine   | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterBigo         | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterChartBoost   | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterDTExchange   | 1.1.1 | 1.1.1 | 1.1.1 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterFan          | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterInMobi       | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterIronSource   | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterLine         | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterMobVista     | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterMoloco       | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterOgury        | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterPangle       | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterPubMatic     | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterUnityAds     | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
+| REVUPMediaMaxAdapterVungle       | 1.1.0 | 1.1.0 | 1.1.0 | 1.1.0 | 1.0.0 |
 
 #### 필수
 ```html

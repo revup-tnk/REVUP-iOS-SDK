@@ -6,6 +6,6 @@ target 'REVUP-iOS-SDK' do
   use_frameworks!
 
   # Pods for REVUP-iOS-SDK
-  pod 'REVUP', '1.1.2'
+  pod 'REVUP', '1.1.4'
 
 end
