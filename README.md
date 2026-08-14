@@ -296,7 +296,7 @@ REVUPInterface.sharedInstance().showLuckyEvent()
 ### C. Show With URL
 ```swift
 let EVENT_URL = ""		// 관리자를 통해 발급
-REVUPInterface.sharedInstance().showLuckyEventUrl()
+REVUPInterface.sharedInstance().showLuckyEventUrl(EVENT_URL)
 ```
 - **사용자 정보 설정(setUserId)** 의 진행 완료 후 Show 호출
 <br/>
