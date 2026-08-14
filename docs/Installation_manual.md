@@ -1,7 +1,7 @@
 # REVUP for iOS Integration
 
 ## SDK Download
-- [최신 SDK 다운로드](https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.5/REVUPIosSdk-1.1.5.zip)
+- [최신 SDK 다운로드](https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.6/REVUPIosSdk-1.1.6.zip)
   - Releases에 이전 버전 다운로드 가능 ([이동](../../releases))
 
 ## Requirements
@@ -16,7 +16,7 @@ Framework를 Project내에 옮깁니다. REVUP.xcframework는 필수이며, 반�
 
 | REVUP Framework               | Essential | Third-party Frameworks                                       |
 | ------------------------------------------- | --------- | ------------------------------------------------------------ |
-| REVUP.xcframework                           | NO       |                                                              |
+| REVUP.xcframework                           | NO        |                                                              |
 | REVUPLuckyEvent.xcframework                 | NO        |                                                              |
 | REVUPMediaAdMob.xcframework                 | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
 | REVUPMediaAdManager.xcframework             | NO        | GoogleMobileAds.xcframework, UserMessagingPlatform.xcframework  |
