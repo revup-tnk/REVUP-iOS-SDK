@@ -26,6 +26,7 @@
     - setLuckyEventInit
     - setLuckyEventUseSafeAreaWebView:useSafeArea
     - setLuckyEventModalPresentationStyle:presentationStyle
+    - setLuckyEventUserInterfaceStyle:style
   - [RewardedVideo](#rewardedvideo)
     - load:unitID
     - isLoaded:unitID
@@ -259,6 +260,31 @@ Lucky Event Web ViewController 의 화면 표시 설정합니다.
 | Parameters        |                                |
 | ----------------- | ------------------------------ |
 | presentationStyle | UIModalPresentationStyle 값 적용 |
+
+<br/>
+
+#### - (void)setLuckyEventUserInterfaceStyle:style
+
+Lucky Event 화면의 테마(라이트 / 다크)를 설정합니다. (`1.1.6` 이상)
+
+**적용 범위는 네이티브 영역입니다.** 화면 배경, 상태바 아이콘 대비, SDK 가 표시하는 안내 팝업이
+대상이며, 이벤트 웹 페이지 자체는 웹에서 정한 대로 표시됩니다.
+
+`showLuckyEvent` 보다 먼저 호출해야 하며, 이미 떠 있는 화면에는 반영되지 않습니다.
+
+| Parameters |                                |
+| ---------- | ------------------------------ |
+| style      | UIUserInterfaceStyle 값 적용      |
+
+| style                             | 동작                                    |
+| --------------------------------- | -------------------------------------- |
+| `UIUserInterfaceStyleLight`       | 단말 설정과 무관하게 항상 라이트             |
+| `UIUserInterfaceStyleDark`        | 단말 설정과 무관하게 항상 다크               |
+| `UIUserInterfaceStyleUnspecified` | 단말의 다크모드 설정을 따름 (**기본값**)      |
+
+> **`1.1.6` 부터 기본값이 `UIUserInterfaceStyleUnspecified` 입니다.**
+> 별도 설정 없이 SDK 만 올리면 다크모드로 설정된 단말에서 이벤트 화면이 다크로 표시됩니다.
+> 항상 라이트로 두려면 `UIUserInterfaceStyleLight` 를 명시해 주세요.
 
 <br/>
 

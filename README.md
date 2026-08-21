@@ -286,14 +286,28 @@ REVUPInterface.sharedInstance().setLuckyEventAppId(EVENT_APP_ID, pubId: EVENT_PU
 ```
 <br/>
 
-### B. Show
+### B. Theme
+```swift
+// 단말의 다크모드 설정을 따름 (기본값)
+REVUPInterface.sharedInstance().setLuckyEventUserInterfaceStyle(.unspecified)
+
+// 단말 설정과 무관하게 항상 라이트 / 다크로 고정
+REVUPInterface.sharedInstance().setLuckyEventUserInterfaceStyle(.light)
+REVUPInterface.sharedInstance().setLuckyEventUserInterfaceStyle(.dark)
+```
+- 적용 범위는 **네이티브 영역**(화면 배경, 상태바 아이콘 대비, SDK 안내 팝업)이며, 이벤트 웹 페이지는 웹에서 정한 대로 표시됨
+- **Show 호출 전** 에 설정해야 하며, 이미 떠 있는 화면에는 반영되지 않음
+- `1.1.6` 부터 기본값이 `.unspecified` 이므로, 별도 설정이 없으면 다크모드 단말에서 화면이 다크로 표시됨
+<br/>
+
+### C. Show
 ```swift
 REVUPInterface.sharedInstance().showLuckyEvent()
 ```
 - **사용자 정보 설정(setUserId)** 의 진행 완료 후 Show 호출
 <br/>
 
-### C. Show With URL
+### D. Show With URL
 ```swift
 let EVENT_URL = ""		// 관리자를 통해 발급
 REVUPInterface.sharedInstance().showLuckyEventUrl()
@@ -301,7 +315,7 @@ REVUPInterface.sharedInstance().showLuckyEventUrl()
 - **사용자 정보 설정(setUserId)** 의 진행 완료 후 Show 호출
 <br/><br/><br/>
 
-### C. WebView interceptor callback
+### E. WebView interceptor callback
 ```swift
 func luckyEventWebViewNavigated(_ url:NSURL!) {
 }
