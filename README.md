@@ -297,7 +297,7 @@ REVUPInterface.sharedInstance().setLuckyEventUserInterfaceStyle(.dark)
 ```
 - 적용 범위는 **네이티브 영역**(화면 배경, 상태바 아이콘 대비, SDK 안내 팝업)이며, 이벤트 웹 페이지는 웹에서 정한 대로 표시됨
 - **Show 호출 전** 에 설정해야 하며, 이미 떠 있는 화면에는 반영되지 않음
-- `1.1.6` 부터 기본값이 `.unspecified` 이므로, 별도 설정이 없으면 다크모드 단말에서 화면이 다크로 표시됨
+- `1.1.9` 부터 기본값이 `.unspecified` 이므로, 별도 설정이 없으면 다크모드 단말에서 화면이 다크로 표시됨
 <br/>
 
 ### C. Show
