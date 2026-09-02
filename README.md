@@ -1,5 +1,5 @@
 # REVUP for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-1.1.9-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-1.1.10-blue)](../../releases)
 
 - 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 26.2 +**
 <details>
@@ -72,7 +72,7 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP', '1.1.9'
+    pod 'REVUP', '1.1.10'
 end
 ```
 <details>
@@ -85,30 +85,30 @@ platform :ios, '13.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP/LuckyEvent', '1.1.9'
-    pod 'REVUP/AdManager', '1.1.9'
-    pod 'REVUP/AdMob', '1.1.9'
-    pod 'REVUP/ChartBoost', '1.1.9'
-    pod 'REVUP/Pangle', '1.1.9'
-    pod 'REVUP/TnkPub', '1.1.9'
-    pod 'REVUP/Vungle', '1.1.9'
-    pod 'REVUP/MaxMediaAdManager', '1.1.9'
-    pod 'REVUP/MaxMediaAdMob', '1.1.9'
-    pod 'REVUP/MaxMediaBidMachine', '1.1.9'
-    pod 'REVUP/MaxMediaBigo', '1.1.9'
-    pod 'REVUP/MaxMediaChartBoost', '1.1.9'
-    pod 'REVUP/MaxMediaDTExchange', '1.1.9'
-    pod 'REVUP/MaxMediaFan', '1.1.9'
-    pod 'REVUP/MaxMediaInMobi', '1.1.9'
-    pod 'REVUP/MaxMediaIronSource', '1.1.9'
-    pod 'REVUP/MaxMediaLine', '1.1.9'
-    pod 'REVUP/MaxMediaMobVista', '1.1.9'
-    pod 'REVUP/MaxMediaMoloco', '1.1.9'
-    pod 'REVUP/MaxMediaOgury', '1.1.9'
-    pod 'REVUP/MaxMediaPangle', '1.1.9'
-    pod 'REVUP/MaxMediaPubMatic', '1.1.9'
-    pod 'REVUP/MaxMediaUnityAds', '1.1.9'
-    pod 'REVUP/MaxMediaVungle', '1.1.9'
+    pod 'REVUP/LuckyEvent', '1.1.10'
+    pod 'REVUP/AdManager', '1.1.10'
+    pod 'REVUP/AdMob', '1.1.10'
+    pod 'REVUP/ChartBoost', '1.1.10'
+    pod 'REVUP/Pangle', '1.1.10'
+    pod 'REVUP/TnkPub', '1.1.10'
+    pod 'REVUP/Vungle', '1.1.10'
+    pod 'REVUP/MaxMediaAdManager', '1.1.10'
+    pod 'REVUP/MaxMediaAdMob', '1.1.10'
+    pod 'REVUP/MaxMediaBidMachine', '1.1.10'
+    pod 'REVUP/MaxMediaBigo', '1.1.10'
+    pod 'REVUP/MaxMediaChartBoost', '1.1.10'
+    pod 'REVUP/MaxMediaDTExchange', '1.1.10'
+    pod 'REVUP/MaxMediaFan', '1.1.10'
+    pod 'REVUP/MaxMediaInMobi', '1.1.10'
+    pod 'REVUP/MaxMediaIronSource', '1.1.10'
+    pod 'REVUP/MaxMediaLine', '1.1.10'
+    pod 'REVUP/MaxMediaMobVista', '1.1.10'
+    pod 'REVUP/MaxMediaMoloco', '1.1.10'
+    pod 'REVUP/MaxMediaOgury', '1.1.10'
+    pod 'REVUP/MaxMediaPangle', '1.1.10'
+    pod 'REVUP/MaxMediaPubMatic', '1.1.10'
+    pod 'REVUP/MaxMediaUnityAds', '1.1.10'
+    pod 'REVUP/MaxMediaVungle', '1.1.10'
 end
 ```
 
@@ -324,7 +324,21 @@ func luckyEventWebViewNavigated(_ url:NSURL!) {
 - Lucky Event WebView에서 발생하는 Scheme URL 정보를 수신, 전달된 URL에 대해 이벤트 처리 용도로 사용 권장
 <br/>
 
-### F. Callback
+### F. CanPlayAd Callback
+```swift
+func isLuckyEventCanPlayAd() -> REVUPLuckyEventCanPlayAdInfo! {
+    let result = REVUPLuckyEventCanPlayAdInfo()
+    result.isCanPlayAd = true/false
+    result.message = "Error Popup Message"
+    return result
+}
+```
+- `setMainDelegate(_:)`를 진행했다면 다음과 같은 응답을 수신 받을 수 있음
+- 해당 기능은 Event Web Page에서 Ad Video를 시청 전 앱에서 시청 여부를 확인 하기 위한 Callback (관리자에게 기능 신청)
+- 기본 1초 내로 응답이 없으면 isCanPlayAd가 true로 실행 됨
+<br/>
+
+### G. Callback
 ```swift
 func onLuckyVideoAdOpened() {
     // Video Ad 열림
