@@ -225,15 +225,23 @@ Lucky Event의 appId 와 pubId 값을 설정합니다.
 
 <br/>
 
-##### - (void)showLuckyEvent
+##### - (BOOL)showLuckyEvent
 
 appId, pubId값에 대응된 Event 의 Web 페이지가 보입니다.
 
+| Return |                    |
+| :------| ------------------ |
+| BOOL   | 이벤트 실행 실패 시 NO |
+
 <br/>
 
-##### - (void)showLuckyEventUrl:url
+##### - (BOOL)showLuckyEventUrl:url
 
 URL의 설정값에 대응된 Event 의 Web 페이지가 보입니다.
+
+| Return |                    |
+| :------| ------------------ |
+| BOOL   | 이벤트 실행 실패 시 NO |
 
 <br/>
 
