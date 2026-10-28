@@ -1,32 +1,32 @@
 # REVUP for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-1.1.12-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-1.2.0-blue)](../../releases)
 [![GitHub package.json version](https://img.shields.io/badge/Android-1.0.7-blue)](https://github.com/tnkfactory/REVUP-ANDROID-SDK)
 
-- 지원 환경 : **iOS 13.0 + / iPadOS 13.0 + / Xcode 26.2 +**
+- 지원 환경 : **iOS 15.0 + / iPadOS 15.0 + / Xcode 26.2 +**
 <details>
 <summary>Networks Version</summary>
 <div markdown="1">  
 
 | Ad Network          | iOS Version |
 |---------------------|-------------|
-| AdMob               | 13.6.0      |
-| AppLovin            | 13.6.3      |
-| BidMachine          | 3.7.1       |
-| Bigo                | 5.3.0       |
-| Chartboost          | 9.12.0      |
-| DT Exchange         | 8.4.7       |
-| InMobi              | 11.3.0      |
-| ironSource	      | 9.4.0.0     |
-| Liftoff(Vungle)     | 7.7.2       |
-| Line                | 3.0.1       |
-| Meta(Fan)           | 6.21.1      |
-| Mintegral(Mobvista) | 8.1.5       |
-| Moloco              | 4.8.1       |
-| Ogury               | 5.2.3       |
-| Pangle              | 8.1.1.1     |
-| PubMatic            | 5.1.1       |
-| TnkPub              | 1.24        |
-| Unity Ads           | 4.19.0      |
+| AdMob               | 13.11.0     |
+| AppLovin            | 13.6.4      |
+| BidMachine          | 3.8.2       |
+| Bigo                | 6.1.0       |
+| Chartboost          | 9.14.2      |
+| DT Exchange         | 8.5.0       |
+| InMobi              | 11.5.0      |
+| ironSource	      | 9.6.1.0     |
+| Liftoff(Vungle)     | 7.7.8       |
+| Line                | 3.1.1       |
+| Meta(Fan)           | 6.22.0      |
+| Mintegral(Mobvista) | 8.1.7       |
+| Moloco              | 4.11.1      |
+| Ogury               | 5.3.1       |
+| Pangle              | 8.3.0.9     |
+| PubMatic            | 5.4.1       |
+| TnkPub              | 1.25        |
+| Unity Ads           | 4.21.0      |
 
 </div>
 </details>
@@ -69,11 +69,11 @@ gem install cocoapods
 - CocoaPods의 Xcode Project내에 Podfile에서 기술
 ```ruby
 # source 'https://github.com/CocoaPods/Specs.git' // 제한망 or install error시 추가
-platform :ios, '13.0'
+platform :ios, '15.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP', '1.1.12'
+    pod 'REVUP', '1.2.0'
 end
 ```
 <details>
@@ -82,34 +82,35 @@ end
 
 ```ruby
 # source 'https://github.com/CocoaPods/Specs.git' // 제한망 or install error시 추가
-platform :ios, '13.0'
+platform :ios, '15.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP/LuckyEvent', '1.1.12'
-    pod 'REVUP/AdManager', '1.1.12'
-    pod 'REVUP/AdMob', '1.1.12'
-    pod 'REVUP/ChartBoost', '1.1.12'
-    pod 'REVUP/Pangle', '1.1.12'
-    pod 'REVUP/TnkPub', '1.1.12'
-    pod 'REVUP/Vungle', '1.1.12'
-    pod 'REVUP/MaxMediaAdManager', '1.1.12'
-    pod 'REVUP/MaxMediaAdMob', '1.1.12'
-    pod 'REVUP/MaxMediaBidMachine', '1.1.12'
-    pod 'REVUP/MaxMediaBigo', '1.1.12'
-    pod 'REVUP/MaxMediaChartBoost', '1.1.12'
-    pod 'REVUP/MaxMediaDTExchange', '1.1.12'
-    pod 'REVUP/MaxMediaFan', '1.1.12'
-    pod 'REVUP/MaxMediaInMobi', '1.1.12'
-    pod 'REVUP/MaxMediaIronSource', '1.1.12'
-    pod 'REVUP/MaxMediaLine', '1.1.12'
-    pod 'REVUP/MaxMediaMobVista', '1.1.12'
-    pod 'REVUP/MaxMediaMoloco', '1.1.12'
-    pod 'REVUP/MaxMediaOgury', '1.1.12'
-    pod 'REVUP/MaxMediaPangle', '1.1.12'
-    pod 'REVUP/MaxMediaPubMatic', '1.1.12'
-    pod 'REVUP/MaxMediaUnityAds', '1.1.12'
-    pod 'REVUP/MaxMediaVungle', '1.1.12'
+    pod 'REVUP/LuckyEvent', '1.2.0'
+    pod 'REVUP/AdManager', '1.2.0'
+    pod 'REVUP/AdMob', '1.2.0'
+    pod 'REVUP/ChartBoost', '1.2.0'
+    pod 'REVUP/MobVista', '1.2.0'
+    pod 'REVUP/Pangle', '1.2.0'
+    pod 'REVUP/TnkPub', '1.2.0'
+    pod 'REVUP/Vungle', '1.2.0'
+    pod 'REVUP/MaxMediaAdManager', '1.2.0'
+    pod 'REVUP/MaxMediaAdMob', '1.2.0'
+    pod 'REVUP/MaxMediaBidMachine', '1.2.0'
+    pod 'REVUP/MaxMediaBigo', '1.2.0'
+    pod 'REVUP/MaxMediaChartBoost', '1.2.0'
+    pod 'REVUP/MaxMediaDTExchange', '1.2.0'
+    pod 'REVUP/MaxMediaFan', '1.2.0'
+    pod 'REVUP/MaxMediaInMobi', '1.2.0'
+    pod 'REVUP/MaxMediaIronSource', '1.2.0'
+    pod 'REVUP/MaxMediaLine', '1.2.0'
+    pod 'REVUP/MaxMediaMobVista', '1.2.0'
+    pod 'REVUP/MaxMediaMoloco', '1.2.0'
+    pod 'REVUP/MaxMediaOgury', '1.2.0'
+    pod 'REVUP/MaxMediaPangle', '1.2.0'
+    pod 'REVUP/MaxMediaPubMatic', '1.2.0'
+    pod 'REVUP/MaxMediaUnityAds', '1.2.0'
+    pod 'REVUP/MaxMediaVungle', '1.2.0'
 end
 ```
 
@@ -117,7 +118,26 @@ end
 </details>
 
 - Version이 상이할 경우 Initialize시 Log를 통해 확인 가능<br/>
+<br/>
 ![AdapterChecked](https://github.com/user-attachments/assets/a9530953-9cca-4eed-9ff9-efc12eacaec9)<br/>
+<details>
+<summary>Xcode 27 이상 추가 설치 방법</summary>
+<div markdown="1">  
+
+- Podfile 파일 가장 끝에 추가 후 pod install 실행
+```ruby
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+    end
+  end
+end
+```
+
+</div>
+</details>
+
 <br/>
 
 #### C. Pod Install
@@ -171,8 +191,8 @@ pod install --repo-update
 ```
 <br/>
 
-#### D. (선택) liftoff 사용 시 AdNetworkIdentifiers 추가
-- liftoff 사용하면서 AdAttributionKit 17.4+ 이면 AdNetwork Download File 내용 추가 ([Download](https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.0.0/REVUPAdNetworks.plist))
+#### D. (선택) liftoff(Vungle) 사용 시 AdNetworkIdentifiers 추가
+- liftoff(Vungle) 사용하면서 AdAttributionKit 17.4+ 이면 AdNetwork Download File 내용 추가 ([Download](https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.0.0/REVUPAdNetworks.plist))
 - 2026년 3월 9일에 마지막으로 파일 내용 추가
 ```xml
 <dict>
