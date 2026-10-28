@@ -118,8 +118,9 @@ end
 </details>
 
 - Version이 상이할 경우 Initialize시 Log를 통해 확인 가능<br/>
+
+![AdapterChecked](https://github.com/user-attachments/assets/a9530953-9cca-4eed-9ff9-efc12eacaec9)
 <br/>
-![AdapterChecked](https://github.com/user-attachments/assets/a9530953-9cca-4eed-9ff9-efc12eacaec9)<br/>
 <details>
 <summary>Xcode 27 이상 추가 설치 방법</summary>
 <div markdown="1">  
@@ -137,7 +138,6 @@ end
 
 </div>
 </details>
-
 <br/>
 
 #### C. Pod Install
