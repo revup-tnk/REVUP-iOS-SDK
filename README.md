@@ -1,5 +1,5 @@
 # REVUP for iOS Integration
-[![GitHub package.json version](https://img.shields.io/badge/iOS-1.2.1-blue)](../../releases)
+[![GitHub package.json version](https://img.shields.io/badge/iOS-1.2.2-blue)](../../releases)
 [![GitHub package.json version](https://img.shields.io/badge/Android-1.0.7-blue)](https://github.com/tnkfactory/REVUP-ANDROID-SDK)
 
 - 지원 환경 : **iOS 15.0 + / iPadOS 15.0 + / Xcode 26.2 +**
@@ -57,6 +57,7 @@
 ## Installation
 ### 1. CocoaPods
 - CocoaPods는 Cocoa Projects의 Dependency를 관리할 수 있음
+- 1.2.2 가 마지막 CocoaPods 배포임 (사유 : CocoaPods의 지원 종료)
 
 #### A. CocoaPods Install
 ```ruby
@@ -73,7 +74,7 @@ platform :ios, '15.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP', '1.2.1'
+    pod 'REVUP', '1.2.2'
 end
 ```
 <details>
@@ -86,31 +87,31 @@ platform :ios, '15.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'REVUP/LuckyEvent', '1.2.1'
-    pod 'REVUP/AdManager', '1.2.1'
-    pod 'REVUP/AdMob', '1.2.1'
-    pod 'REVUP/ChartBoost', '1.2.1'
-    pod 'REVUP/MobVista', '1.2.1'
-    pod 'REVUP/Pangle', '1.2.1'
-    pod 'REVUP/TnkPub', '1.2.1'
-    pod 'REVUP/Vungle', '1.2.1'
-    pod 'REVUP/MaxMediaAdManager', '1.2.1'
-    pod 'REVUP/MaxMediaAdMob', '1.2.1'
-    pod 'REVUP/MaxMediaBidMachine', '1.2.1'
-    pod 'REVUP/MaxMediaBigo', '1.2.1'
-    pod 'REVUP/MaxMediaChartBoost', '1.2.1'
-    pod 'REVUP/MaxMediaDTExchange', '1.2.1'
-    pod 'REVUP/MaxMediaFan', '1.2.1'
-    pod 'REVUP/MaxMediaInMobi', '1.2.1'
-    pod 'REVUP/MaxMediaIronSource', '1.2.1'
-    pod 'REVUP/MaxMediaLine', '1.2.1'
-    pod 'REVUP/MaxMediaMobVista', '1.2.1'
-    pod 'REVUP/MaxMediaMoloco', '1.2.1'
-    pod 'REVUP/MaxMediaOgury', '1.2.1'
-    pod 'REVUP/MaxMediaPangle', '1.2.1'
-    pod 'REVUP/MaxMediaPubMatic', '1.2.1'
-    pod 'REVUP/MaxMediaUnityAds', '1.2.1'
-    pod 'REVUP/MaxMediaVungle', '1.2.1'
+    pod 'REVUP/LuckyEvent', '1.2.2'
+    pod 'REVUP/AdManager', '1.2.2'
+    pod 'REVUP/AdMob', '1.2.2'
+    pod 'REVUP/ChartBoost', '1.2.2'
+    pod 'REVUP/MobVista', '1.2.2'
+    pod 'REVUP/Pangle', '1.2.2'
+    pod 'REVUP/TnkPub', '1.2.2'
+    pod 'REVUP/Vungle', '1.2.2'
+    pod 'REVUP/MaxMediaAdManager', '1.2.2'
+    pod 'REVUP/MaxMediaAdMob', '1.2.2'
+    pod 'REVUP/MaxMediaBidMachine', '1.2.2'
+    pod 'REVUP/MaxMediaBigo', '1.2.2'
+    pod 'REVUP/MaxMediaChartBoost', '1.2.2'
+    pod 'REVUP/MaxMediaDTExchange', '1.2.2'
+    pod 'REVUP/MaxMediaFan', '1.2.2'
+    pod 'REVUP/MaxMediaInMobi', '1.2.2'
+    pod 'REVUP/MaxMediaIronSource', '1.2.2'
+    pod 'REVUP/MaxMediaLine', '1.2.2'
+    pod 'REVUP/MaxMediaMobVista', '1.2.2'
+    pod 'REVUP/MaxMediaMoloco', '1.2.2'
+    pod 'REVUP/MaxMediaOgury', '1.2.2'
+    pod 'REVUP/MaxMediaPangle', '1.2.2'
+    pod 'REVUP/MaxMediaPubMatic', '1.2.2'
+    pod 'REVUP/MaxMediaUnityAds', '1.2.2'
+    pod 'REVUP/MaxMediaVungle', '1.2.2'
 end
 ```
 
